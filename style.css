@@ -1,0 +1,146 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 60px;
+    background-color: #ffff;
+
+
+}
+body.slide-down {
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 1px solid #fff;
+    z-index: 9999;
+}
+nav .logo {
+    padding: 22px 20px;
+    line-height: 12px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+   
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+nav ul li a {
+    line-height: 50px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 999;
+}
+nav ul li a:hover {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+#slider {
+    margin-top: 0px;
+    overflow: hidden;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    height: 100vh;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+   
+}
+
+#slider figure img{
+    float: left;
+    width: 20%;
+    position: relative;
+    filter: brightness(60%);
+    object-fit: cover;
+    object-position: center;
+}
+
+ 
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+.container {
+    display: flex;
+}
+
+#about, 
+#objective {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: left;
+    border-radius: 6px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#about {
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    margin-right: 10px;
+}
+
+#objective {
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    margin-left: 10px;
+}
